@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Interview Question Generator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Automated Interview Question Generator</h1>
+    <p class="subtitle">AI-powered, resume-aware interview preparation tool</p>
+
+    <div class="form-card">
+  <label>Job Role</label>
+  <input id="role" type="text" placeholder="e.g. Backend Developer">
+
+  <label>Required Skills</label>
+  <textarea id="skills" placeholder="Python, FastAPI, SQL"></textarea>
+
+  <label>Resume Text (optional)</label>
+  <textarea id="resume" placeholder="Paste resume text here"></textarea>
+
+  <label>Number of Questions</label>
+  <input id="num" type="number" value="5">
+
+  <button id="generateBtn" onclick="generate()">Generate Questions</button>
+<p id="loadingText" style="display:none; margin-top:10px;">
+  Generating questions… this may take up to 30 seconds on first run.
+</p> 
+</div>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
